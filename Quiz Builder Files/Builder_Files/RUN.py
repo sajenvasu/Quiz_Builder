@@ -10,9 +10,9 @@ def Version():
     Print_Same_Line(sizeof_version, "*")
 
 print("******Menu******")
-print("1) Take a Quiz")
-print("2) Create a Quiz")
-print("3) Modify a Quiz")
+print("1) Take a quiz")
+print("2) Create a quiz")
+print("3) Modify a quiz")
 print("4) Version")
 print("5) Exit")
 inp = int(input("****************\n>> "))
