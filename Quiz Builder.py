@@ -4,7 +4,7 @@ import platform
 os_name = platform.system()
 
 if (os_name == "Windows"):
-    print("Windows")
+    subprocess.call("cls && cd Quiz Builder Files\Builder_Files && python RUN.py", shell = True)
 
 elif(os_name == "Linux"):
     subprocess.call("clear && python Quiz\ Builder\ Files/Builder_Files/RUN.py", shell = True)
