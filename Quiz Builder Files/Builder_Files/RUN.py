@@ -3,9 +3,11 @@
 from Printer_File import Print_Same_Line
 
 def Version():
-    Print_Same_Line(13, "*")
-    print("Version 1.0.1")
-    Print_Same_Line(13, "*")
+    version = "Version 1.0.1"
+    sizeof_version = len(version)
+    Print_Same_Line(sizeof_version, "*")
+    print(version)
+    Print_Same_Line(sizeof_version, "*")
 
 print("******Menu******")
 print("1) Take a Quiz")
