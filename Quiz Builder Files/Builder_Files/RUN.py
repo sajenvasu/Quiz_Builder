@@ -1,18 +1,18 @@
-# Version 1.0.2
+# Version 1.0.3
 
 from Printer_File import Print_Same_Line
 
 def Version():
-    version = "Version 1.0.2"
+    version = "Version 1.0.3"
     sizeof_version = len(version)
     Print_Same_Line(sizeof_version, "*")
     print(version)
     Print_Same_Line(sizeof_version, "*")
 
 print("******Menu******")
-print("1) Take a Quiz")
-print("2) Create a Quiz")
-print("3) Modify a Quiz")
+print("1) Take a quiz")
+print("2) Create a quiz")
+print("3) Modify a quiz")
 print("4) Version")
 print("5) Exit")
 inp = int(input("****************\n>> "))
@@ -21,13 +21,13 @@ print("")
 if inp < 1 or inp > 5:
     print("Range not between 1 and 5")
 elif inp == 1:
-    #Take()
-    print("")
+    import Take
+    Take
 elif inp == 2:
-    #Create()
-    print("")
+    import Create
+    Create
 elif inp == 3:
-    #Modify()
-    print("")
+    import Modify
+    Modify
 elif inp == 4:
     Version()
