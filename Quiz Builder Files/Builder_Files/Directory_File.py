@@ -1,10 +1,20 @@
-def Check_Dir():
-    import os
-    import platform
+import os
+import platform
 
+path = os.getcwd()
+Linux_newPath = path + "/Quiz Builder Files/Builder_Data"
+
+def Check_Dir():
+    if (platform.system() == "Linux"):      
+        if not(os.path.isdir(Linux_newPath)):
+            os.mkdir(Linux_newPath)
+
+def Check_SizeofDir():
     if (platform.system() == "Linux"):
-        path = os.getcwd()
-        new_path = path + "/Quiz Builder Files/Builder_Data"
-        
-        if not(os.path.isdir(new_path)):
-            os.mkdir(new_path)
+        x = len(os.listdir(Linux_newPath))
+        return x
+
+def Print_FilesinDir():
+    if (platform.system() == "Linux"):
+        list_ofQuiz = os.listdir(Linux_newPath)
+        return list_ofQuiz
