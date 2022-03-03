@@ -3,11 +3,15 @@ import platform
 
 path = os.getcwd()
 Linux_newPath = path + "/Quiz Builder Files/Builder_Data"
+Windows_newPath = path.replace("Builder_Files", "Builder_Data")
 
 def Check_Dir():
     if (platform.system() == "Linux"):      
         if not(os.path.isdir(Linux_newPath)):
             os.mkdir(Linux_newPath)
+            
+    if (platform.system() == "Windows") and not(os.path.isdir(Windows_newPath)):
+            os.mkdir(Windows_newPath)
 
 def Check_SizeofDir():
     if (platform.system() == "Linux"):
