@@ -17,8 +17,14 @@ def Check_SizeofDir():
     if (platform.system() == "Linux"):
         x = len(os.listdir(Linux_newPath))
         return x
+    elif (platform.system() == "Windows"):
+        x = len(os.listdir(Windows_newPath))
+        return x
 
-def Print_FilesinDir():
+def List_FilesinDir():
     if (platform.system() == "Linux"):
         list_ofQuiz = os.listdir(Linux_newPath)
+        return list_ofQuiz
+    elif (platform.system() == "Windows"):
+        list_ofQuiz = os.listdir(Windows_newPath)
         return list_ofQuiz
