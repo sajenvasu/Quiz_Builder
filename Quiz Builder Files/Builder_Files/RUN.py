@@ -1,9 +1,9 @@
-# Version 1.1.2
+# Version 1.1.3
 
 from Printer_File import Print_Same_Line
 
 def Version():
-    version = "Version 1.1.2"
+    version = "Version 1.1.3"
     sizeof_version = len(version)
     Print_Same_Line(sizeof_version, "*")
     print(version)
