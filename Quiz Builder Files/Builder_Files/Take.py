@@ -8,5 +8,4 @@ if (Check_SizeofDir() != 0):
     inp = int(input("[Enter Quiz To Take] >> "))
 
 else:
-    print("There are no quizzes to take")
-    print("Please create a quiz to take")
+    print("[Please Create A Quiz To Take]")
