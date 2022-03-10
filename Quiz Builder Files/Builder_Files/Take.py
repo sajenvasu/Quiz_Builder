@@ -5,7 +5,7 @@ if (Check_SizeofDir() != 0):
     import View
     
     View 
-    inp = int(input(">> "))
+    inp = int(input("[Enter Quiz To Take] >> "))
 
 else:
     print("There are no quizzes to take")
